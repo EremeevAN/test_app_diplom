@@ -22,6 +22,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./Dockerfile
+          file: /Dockerfile
           push: true
           tags: aeremeev1604/site:latest
