@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Login to DockerHub Registry
-        run: echo ${{ secrets.password }} | docker login -u ${{ secrets.username }} --password-stdin
+        run: docker login -u aeremeev1604 -p bytngfcc1337
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
@@ -23,4 +23,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.username }}/site:latest
+          tags: aeremeev1604/site:latest
