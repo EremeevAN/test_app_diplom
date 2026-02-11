@@ -1,4 +1,4 @@
-name: Docker-test1
+name: Docker
 
 on:
   push:
@@ -24,4 +24,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: aeremeev1604/site:latest
+          tags: ${{ secrets.USERNAME }}/site:latest
