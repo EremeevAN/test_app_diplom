@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Login to DockerHub Registry
-        run: echo "Sense987$#@" | docker login -u aeremeev1604 --password-stdin
+        run: echo "Sense987$#@" | docker login -u "aeremeev1604" --password-stdin
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
